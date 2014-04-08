@@ -1,4 +1,4 @@
-require_relative '../parser.rb'
+require_relative '../train_schedule.rb'
 require 'rack/test'
 
 set :environment, :test
@@ -18,16 +18,15 @@ describe 'Parser Service' do
 end
 
 describe Parser do
-
-	# let(:train_parser) { Parser.new(file) }
-	before :each do
-		@train_parser = Parser.new(file)
-	end
+	let(:train_parser) { Parser.new(file) }
+	# before :each do
+	# 	@train_parser = Parser.new(file)
+	# end
 
 	describe "#new" do
-		# it "returns a new Parser object" do
-		# 	@train_parser.should be_an_instance_of Parser
-		# end
+		it "returns a new Parser object" do
+			train_parser.should be_an_instance_of Parser
+		end
 	end
 end
 

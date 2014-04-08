@@ -15,16 +15,15 @@ describe 'Parser Service' do
 		last_response.should be_ok
 	end
 
-	describe Parser do
+end
 
-		before :each do
-			@train_parser = Parser.new(train_schedule)
-		end
+describe Parser do
 
-		describe '#new' do
-			it "returns a new Parser object" do
-				@train_parser.should be_an_instance_of Parser
-			end
+	let(:train_parser) { Parser.new(file) }
+
+	describe "#new" do
+		it "returns a new Parser object" do
+			@train_parser.should be_an_instance_of Parser
 		end
 	end
 end

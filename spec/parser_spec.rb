@@ -14,4 +14,18 @@ describe 'Parser Service' do
 		get '/'
 		last_response.should be_ok
 	end
+
+	describe Parser do
+
+		before :each do
+			@train_parser = Parser.new(train_schedule)
+		end
+
+		describe '#new' do
+			it "returns a new Parser object" do
+				@train_parser.should be_an_instance_of Parser
+			end
+		end
+	end
 end
+

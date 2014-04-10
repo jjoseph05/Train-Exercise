@@ -1,8 +1,6 @@
 require 'sinatra'
 
 get '/' do
-	"Hello World"
+  "Hello World"
 end
 
-class Parser
-end

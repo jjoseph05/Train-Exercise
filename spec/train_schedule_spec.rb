@@ -18,7 +18,7 @@ describe 'TrainSchedule Service' do
 end
 
 describe TrainSchedule do
-  let(:train_schedule) { TrainSchedule.new(file) }
+  let(:train_schedule) {TrainSchedule.new}
 
   
   describe "#new" do

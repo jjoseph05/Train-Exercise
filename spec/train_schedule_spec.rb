@@ -1,3 +1,4 @@
+require 'spec_helper'
 require_relative '../train_schedule.rb'
 
 require 'rack/test'
@@ -35,4 +36,3 @@ describe TrainSchedule do
     it 'calls the parse method if schedule is empty'
   end
 end
-

@@ -1,3 +1,4 @@
+require 'spec_helper'
 require_relative '../train_schedule.rb'
 
 require 'rack/test'
@@ -17,14 +18,21 @@ describe 'TrainSchedule Service' do
   end
 end
 
-describe TrainSchedule do
-  let(:train_schedule) {TrainSchedule.new}
+describe TrainSchedule do 
+  let(:train) { TrainSchedule.new("file.csv") }
 
-  
-  describe "#new" do
-    it "returns a new TrainSchedule object" do
-      train_schedule.should be_an_instance_of TrainSchedule
+  describe "#intialize" do
+    it 'has one parameter' do 
+      expect { TrainSchedule.new }.to raise_error
     end
+
+  end
+
+  it 'accepts a csv file'
+  it 'initializes with an empty array'
+  
+  describe '#schedule' do
+    it 'returns a schedule if it exists'
+    it 'calls the parse method if schedule is empty'
   end
 end
-

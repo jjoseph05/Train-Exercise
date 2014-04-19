@@ -1,13 +1,4 @@
 require 'spec_helper'
-require_relative '../train_schedule.rb'
-
-require 'rack/test'
-
-set :environment, :test
-
-def app
- Sinatra::Application
-end
 
 describe 'TrainSchedule Service' do
   include Rack::Test::Methods

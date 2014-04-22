@@ -3,3 +3,8 @@ get '/' do
 
   haml :index
 end
+
+get '/upload' do
+  haml :index
+end
+

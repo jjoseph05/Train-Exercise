@@ -13,3 +13,8 @@
 				%td= listing.route_name
 				%td= listing.run_number
 				%td= listing.operator_id
+	%h2 Upload
+	%form{:action=>"/upload",:method=>"post",:enctype=>"multipart/form-data"}
+		%input{:type=>"file",:name=>"file"}
+		%input{:type=>"submit",:value=>"Upload"}
+	

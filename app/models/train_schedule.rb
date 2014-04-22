@@ -1,3 +1,3 @@
 class TrainSchedule < ActiveRecord::Base
-  # Remember to create a migration!
+	has_many: :train_listings
 end

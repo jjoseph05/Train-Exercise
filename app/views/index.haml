@@ -1,2 +1,15 @@
 .container
-  %p "Hello World"
+	.train_listings
+	%table
+		%thead
+			%th TrainLine
+			%th RouteName
+			%th RunNumber
+			%th OperatorID
+		%tbody
+			- @listings.each do |listing|
+				%tr
+				%td= listing.train_line
+				%td= listing.route_name
+				%td= listing.run_number
+				%td= listing.operator_id

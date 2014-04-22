@@ -1,3 +1,3 @@
 class TrainSchedule < ActiveRecord::Base
-	has_many: :train_listings
+	has_many :train_listings
 end

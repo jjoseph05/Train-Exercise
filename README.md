@@ -4,8 +4,8 @@ Train-Exercise
 Train Exercise - Ruby, Sinatra
 
 #Getting Up and Running#
-
 Steps 1-5 via Terminal, Step 6 via Browser
+
 1) run 'bundle install'
 
 2) run 'rake db:create'

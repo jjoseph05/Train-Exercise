@@ -19,7 +19,10 @@ end
 # end
 
 post '/upload' do
-	@schedules = TrainSchedule.create
-	@schedules.schedule = []
-  @schedules.import(params[:file])
+	# @schedule = TrainSchedule.create
+	# @schedule.schedule = []
+	puts "*=="*80
+	
+  TrainSchedule.import(params[:filename])
+  puts "*=="*80
 end
